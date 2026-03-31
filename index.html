@@ -1,25 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PollenIQ Privacy Policy</title>
+  <title>PollenIQ Support</title>
   <style>
-    body { font-family: -apple-system, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-    h1 { color: #1B5E20; }
-    h2 { color: #2E7D32; margin-top: 32px; font-size: 16px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background: #F8FBF8;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(160deg, #1B5E20, #2E7D32);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    header p {
+      font-size: 15px;
+      opacity: 0.85;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1B5E20;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .faq-item {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #F0F4F0;
+    }
+    .faq-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .faq-item strong {
+      display: block;
+      font-size: 15px;
+      color: #1B5E20;
+      margin-bottom: 4px;
+    }
+    .faq-item p {
+      font-size: 14px;
+      color: #555;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid #F0F4F0;
+      font-size: 14px;
+      color: #333;
+    }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-icon { font-size: 22px; flex-shrink: 0; }
+    .contact-row a { color: #2E7D32; text-decoration: none; font-weight: 600; }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #AAA;
+      padding: 16px;
+    }
+    footer a { color: #2E7D32; text-decoration: none; }
   </style>
 </head>
 <body>
-  <h1>PollenIQ Privacy Policy</h1>
-  <p>Last updated: March 2026</p>
-  <h2>1. Overview</h2>
-  <p>PollenIQ does not collect, store, or share personal information. All symptom logs are stored locally on your device only.</p>
-  <h2>2. Location Data</h2>
-  <p>Your ZIP code or coordinates are sent to Google Pollen API and OpenStreetMap via our proxy server to retrieve pollen forecasts. We do not store your location.</p>
-  <h2>3. No Account Required</h2>
-  <p>PollenIQ requires no account, email, or personal information to use.</p>
-  <h2>4. Medical Disclaimer</h2>
-  <p>PollenIQ is not a medical device and does not provide medical advice. Always consult a qualified healthcare provider.</p>
+ 
+<header>
+  <h1>🌿 PollenIQ</h1>
+  <p>Support Center</p>
+</header>
+ 
+<div class="container">
+ 
+  <div class="card">
+    <h2>Frequently Asked Questions</h2>
+ 
+    <div class="faq-item">
+      <strong>Why is grass or weed pollen showing 0?</strong>
+      <p>This is likely accurate for your region and season. Grass pollen peaks May–July and weed pollen (ragweed) peaks August–September. Tree pollen is the main type active in spring. PollenIQ displays real data from Google Pollen API — if they report 0, that's what we show.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>Why won't pollen data load?</strong>
+      <p>Make sure you have an active internet connection and have entered a valid 5-digit US ZIP code. If the problem persists, close and reopen the app. Pollen data is cached once per day so if you've already loaded it today it won't re-fetch unnecessarily.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>When does my Personal Risk Score unlock?</strong>
+      <p>Your risk score unlocks after you have logged symptoms on 7 different days. This ensures the score is based on enough personal data to be meaningful. A progress bar on the home screen shows how many days you've logged.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>When do Personal Insights unlock?</strong>
+      <p>Personal Insights in the History tab unlock after 5 days of logging. The more consistently you log, the more accurate your insights become.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>How do I reset or clear my data?</strong>
+      <p>Go to Settings → tap "Clear All My Data". This permanently deletes all symptom logs and preferences from your device. This action cannot be undone.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>Is my symptom data private?</strong>
+      <p>Yes. All symptom logs are stored only on your device and are never uploaded to any server. Your location (ZIP code) is only used to fetch pollen forecast data and is not stored by us.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>What does the Allergy Risk Score mean?</strong>
+      <p>The risk score (0–100) is calculated by an algorithmic formula using your selected pollen triggers, current pollen levels, and recent symptom history. It is a personal tracking tool only and is not a medical assessment. Always consult a healthcare provider for medical decisions.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>How do I export my symptom history?</strong>
+      <p>Go to Settings → tap "Export Symptom Log". This generates a plain text summary of your logs that you can share or save.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <strong>The app is only showing data for the US — why?</strong>
+      <p>PollenIQ currently supports US ZIP codes only. The Google Pollen API coverage may be limited in some regions. We plan to expand coverage in future updates.</p>
+    </div>
+  </div>
+ 
+  <div class="card">
+    <h2>Contact Us</h2>
+    <div class="contact-row">
+      <span class="contact-icon">✉️</span>
+      <div>
+        <div style="font-weight:700;margin-bottom:2px;">Email Support</div>
+        <a href="mailto:support@allergytrack.app">support@allergytrack.app</a>
+        <div style="font-size:12px;color:#999;margin-top:2px;">We aim to respond within 2 business days.</div>
+      </div>
+    </div>
+    <div class="contact-row">
+      <span class="contact-icon">🔒</span>
+      <div>
+        <div style="font-weight:700;margin-bottom:2px;">Privacy Policy</div>
+        <a href="index.html">View Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="card">
+    <h2>About PollenIQ</h2>
+    <p style="font-size:14px;color:#555;">PollenIQ is a pollen tracking and personal symptom logging app for iOS. It is not a medical device and does not provide medical advice. Pollen data is sourced from Google Pollen API. All symptom data is stored locally on your device.</p>
+    <p style="font-size:13px;color:#AAA;margin-top:10px;">Version 1.0 · © 2026 PollenIQ. All rights reserved.</p>
+  </div>
+ 
+</div>
+ 
+<footer>
+  <a href="index.html">Privacy Policy</a> &nbsp;·&nbsp; © 2026 PollenIQ
+</footer>
+ 
 </body>
 </html>
